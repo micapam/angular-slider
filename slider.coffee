@@ -107,7 +107,7 @@ sliderDirective = ($timeout) ->
 
         unless transformFn
           return value        
-        transformFn value
+        transformFn value, scope.floor, scope.ceiling
 
       dimensions = ->
         # roundStep the initial score values
